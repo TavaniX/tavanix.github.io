@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#root {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.galContainer {
+	transition: all 0.2s;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+.film {
+	transition: margin 1.5s; /* эффект плавного скролла */
+	display: flex;
+	align-items: center;
+}
+
+.card {
+	margin: 0 3%;
+	display: flex;
+}
+
+h2 {
+	margin-top: 10px;
+	font-size: 35px;
+}
+
+p {
+	margin-left: 25px;
+	font-size: 20px;
+}
+
+.container {
+	text-align: center;
+}
+
+.avatar {
+	height: 150px;
+	width: 225px;
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+	border-radius: 5px;
+}
+
+.rightBtn, .leftBtn {
+	transition: all .5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	padding: 20px;
+	background-color: white;
+	color: black;
+	font-size: 50px;
+	font-weight: bold;
+	cursor: pointer;
+	height: 100%;
+	opacity: 0.05;
+}
+
+.rightBtn:hover, .leftBtn:hover {
+	opacity: 0.5;
+}
+
+.leftBtn {
+	left: 0;
+}
+
+.rightBtn {
+	right: 0;
+}
+
+.pointContainer {
+	position: absolute;
+	left: 50%; /* от левого края сдвинуть*/
+	transform: translateX(-50%); /* сдвинуть относительно его самого на половину*/
+	bottom: 0;
+	bottom: 10px;
+}
+
+.point {
+	display: inline-block;
+	cursor: pointer;
+	width: 21px;
+	height: 21px;
+	border: 2px solid white;
+	border-radius: 50%;
+	margin: 0 10px;
+}
+
+.active {
+	width: 21px;
+	height: 21px;
+	border: 2px solid white;
+	background-color: green;
+}
