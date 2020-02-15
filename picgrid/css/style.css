@@ -1,0 +1,57 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.root {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.btn {
+	height: 400px;
+	width: 30%;
+	margin: 10px 0;
+	background-color: gray;
+	color: white;
+	cursor: pointer;
+
+	/*центрируем текст*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-position: center;
+    background-size: cover;
+    background-color: black;
+    opacity: .4;
+}
+
+.btn.selected { /*присваиваем второй класс .selected, его потом будем присваивать через js*/
+	box-shadow: 0 0 10px black;
+	background-color: green;
+	opacity: 1;
+	width: 33%;
+}
+
+.left {
+	background-color: yellow;
+}
+
+.right {
+	background-color: pink;
+}
+
+  
+.clickedShadow {
+	height: 100px;
+	background-color: gray;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+}
