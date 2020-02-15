@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/foopicker.css">
+	<script src="https://kit.fontawesome.com/a6c92110b7.js" crossorigin="anonymous"></script> <!--  -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700,700i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<title>PestoResto</title>
+</head>
+
+<body>
+	<div class="root">
+		<!-- кнопа вверх -->
+		<div class="up">
+			<i class="fas fa-chevron-up"></i>
+		</div>
+		<!-- шапка и меню -->
+		<div class="intro"> 
+			<div class="menu-wrap">
+				<input type="checkbox" class="toggler">
+				<div class="hamburger"><div></div></div>
+				<div class="menu-burger">
+					<div>
+						<div>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Typography</a></li>
+								<li><a href="#">Contacts</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="logo">
+				<img class="logo-grafic" src="img/logo.png" alt="logo">
+			</div>
+			<div class="nav">
+				<a href="#">home</a>
+				<a href="#">about</a>
+				<a href="#">typography</a>
+				<a href="#">contacts</a>
+			</div>
+			<div class="btn">
+				book now
+			</div>
+		</div>
+		<!-- добро пожаловать -->
+		<div class="welcome">
+			<div class="welcome-wrapper">
+				<div>
+					<h1>WELCOME</h1>
+				</div>
+				<div id="welcome-line"></div>
+				<div id="welcome-text">
+					<div>Our restaurant offers full-service dining with breathtaking views seen from our indoor covered patio and our outdoor sundeck.</div>
+				</div>
+			</div>
+			<div id="bg-container"> 
+				<div id="bg-image"></div>
+			</div>
+		</div>
+		<!-- форма брони -->
+		<div class="reserve">
+			<div class="container">
+				<div class="name">
+					<p>name</p>
+					<input type="text" id="name" name="name" required minlength="4" maxlength="18" size="10" class="long" placeholder="YOUR NAME">
+				</div>
+				<div class="phone">
+					<p>phone</p>
+					<input type="phone" class="long" placeholder="YOUR PHONE NUMBER">
+				</div>
+				<div class="date">
+					<div>
+						<p class="form">date</p>
+						<input type="text" id="datepicker" class="medium" placeholder="28-Jun-2019">
+					</div>
+					<!-- <div class="icon">
+						<p id="icon"><i class="far fa-calendar-alt"></i></p>
+					</div> -->
+				</div>
+				<div class="people">
+					<p>no. of people</p>
+					<select name ="numPers" id="numOfPerson" value="2">
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+					</select>
+					<hr>
+				</div>
+				<div class="check">
+					<button class="btnNew">
+						check availability
+					</button>
+				</div>	
+			</div>
+		</div>
+		<!-- о нас -->
+		<div class="about-us">
+			<div class="container">
+				<div class="wrapper">
+					<div class="about-images">
+						<img src="img/cook.png" alt="">
+					</div>
+					<div class="about-cook">
+						<h2>About Us</h2>
+						<p>Pesto is a family owned and operated Italian Restaurant offering a combination of fresh
+							ingredients and authentic Italian cooking.</p>
+						<p>We will make sure you are served the most authentic and fresh Italian dishes, while offering
+							the best customer service. Our kitchen is committed to providing our guests with the best
+							Italian Cuisine.</p>
+						<img src="img/signature.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- предложения -->
+		<div class="offers">
+			<div class="container">
+				<div class="featured">
+					<h2>Featured Offers</h2>
+					<p>We offer a great variety of the best Italian dishes to our visitors and guests. Below are some of
+						our most popular main dishes and desserts.</p>
+				</div>
+				<div class="price">
+					<div class="prod-wrapper">
+						<div class="prod-info">
+							<div class="prod-outter img-one">
+								<div class="order">ORDER NOW</div>
+							</div>
+							<div class="prod-caption">
+								<h4>Ravioli</h4>
+								<p>$8</p>
+							</div>							
+						</div>
+						<div class="prod-info">
+							<div class="prod-outter img-two">
+								<div class="order">ORDER NOW</div>
+							</div>
+							<div class="prod-caption">
+								<h4>Black Pasta</h4>
+								<p>$13</p>
+							</div>
+						</div>
+						<div class="prod-info">
+							<div class="prod-outter img-three">
+								<div class="order">ORDER NOW</div>
+							</div>
+							<div class="prod-caption">
+								<h4>Gelato</h4>
+								<p>$4</p>
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- меню блюд -->
+		<div class="menu">
+			<div class="container">
+				<h2>Our Restaurant Menu</h2>
+				<div class="table">
+					<div class="nav">
+						<div class="navItems">
+							<div><a href="#" class="clicked" id="navItems-main">MAIN</a></div>
+							<div><a href="#" class="clicked" id="navItems-desserts">DESSERTS</a></div>
+							<div><a href="#" class="clicked" id="navItems-drinks">DRINKS</a></div>
+						</div>
+					</div>
+					<div class="content">
+						<div class="content-wrapper">
+							<!-- тут скриптом строим -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- галлерея -->
+		<div class="gallery">
+			<div class="container">
+				<div class="gallery-top">
+					<div class="img-one hoverGalleryItem">
+						<div class="zoom">ZOOM</div>
+					</div>
+					<div class="img-two hoverGalleryItem">
+						<div class="zoom">ZOOM</div>
+					</div>
+					<div class="img-three hoverGalleryItem">
+						<div class="zoom">ZOOM</div>
+					</div>
+				</div>
+				<div class="gallery-bottom">
+					<div class="img-four hoverGalleryItem">
+						<div class="zoom">ZOOM</div>
+					</div>
+					<div class="img-five hoverGalleryItem">
+						<div class="zoom">ZOOM</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<!-- новости -->
+		<div class="news">
+			<div class="container">
+				<div class="header"><p>Recent News</p></div>
+				<div class="content" id="news-slight">
+					<div class="posts">
+						<div class="posts-wrapper">
+							<div class="posts-items one">
+								<a href="#" class="date">OCT 17, 2019</a>
+								<a href="#" class="title">Genuine Italian Pizza: Authenticity and Choice</a>
+								<div>As an Italian restaurant, we are very proud of our delicious authentic pizzas. Our three most popular choices are the Rustica, the Toscana and...</div>
+								<a href="#" class="more">Read more &rarr;</a>
+							</div>
+							<div class="posts-items two">
+								<a href="#" class="date">JUL 12, 2019</a>
+								<a href="#" class="title">What Makes Some Seasonings Truly Italian?</a>
+								<div>When thinking of Italian cuisine, dishes like pasta enveloped in hearty sauces come to mind. Certain flavors seem to be found across the different...</div>
+								<a href="#" class="more">Read more &rarr;</a>
+							</div>
+							<div class="posts-items three">
+								<a href="#" class="date">AUG 21, 2019</a>
+								<a href="#" class="title">The Delicious History of Lasagna and Its Origins</a>
+								<div>Lasagna, could there be a more perfect dish? It’s comfort food on steroids. Layers of cheese generously piled on top of decadent amounts...</div>
+								<a href="#" class="more">Read more &rarr;</a>
+							</div>
+							<div class="posts-items four">
+								<a href="#" class="date">AUG 15, 2019</a>
+								<a href="#" class="title">What Makes Some Seasonings Truly Italian?</a>
+								<div>When thinking of Italian cuisine, dishes like pasta enveloped in hearty sauces come to mind. Certain flavors seem to be found across the different...</div>
+								<a href="#" class="more">Read more &rarr;</a>
+							</div>
+							<div class="posts-items five">
+								<a href="#" class="date">SEP 15, 2019</a>
+								<a href="#" class="title">What Makes Some Seasonings Truly Italian?</a>
+								<div>When thinking of Italian cuisine, dishes like pasta enveloped in hearty sauces come to mind. Certain flavors seem to be found across the different...</div>
+								<a href="#" class="more">Read more &rarr;</a>
+							</div>
+							<div class="posts-items six">
+								<a href="#" class="date">SEP 28, 2019</a>
+								<a href="#" class="title">What Makes Some Seasonings Truly Italian?</a>
+								<div>When thinking of Italian cuisine, dishes like pasta enveloped in hearty sauces come to mind. Certain flavors seem to be found across the different...</div>
+								<a href="#" class="more">Read more &rarr;</a>
+							</div>
+							<div class="posts-items seven">
+								<a href="#" class="date">JUL 12, 2019</a>
+								<a href="#" class="title">What Makes Some Seasonings Truly Italian?</a>
+								<div>When thinking of Italian cuisine, dishes like pasta enveloped in hearty sauces come to mind. Certain flavors seem to be found across the different...</div>
+								<a href="#" class="more">Read more &rarr;</a>
+							</div>
+							<div class="posts-items eight">
+								<a href="#" class="date">OCT 17, 2019</a>
+								<a href="#" class="title">What Makes Some Seasonings Truly Italian?</a>
+								<div>When thinking of Italian cuisine, dishes like pasta enveloped in hearty sauces come to mind. Certain flavors seem to be found across the different...</div>
+								<a href="#" class="more">Read more &rarr;</a>
+							</div>
+							<div class="posts-items nine">
+								<a href="#" class="date">NOV 14, 2019</a>
+								<a href="#" class="title">What Makes Some Seasonings Truly Italian?</a>
+								<div>When thinking of Italian cuisine, dishes like pasta enveloped in hearty sauces come to mind. Certain flavors seem to be found across the different...</div>
+								<a href="#" class="more">Read more &rarr;</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="slider">
+						<div class="wrapper">
+							<div class="dots dot-one"></div>
+							<div class="dots dot-two"></div>
+							<div class="dots dot-three"></div>
+							<!-- остальные точки через скрипт -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- подвал -->
+		<div class="footer">
+			<div class="container" id="flash">
+				<div class="logo">
+					<img class="logo-grafic" src="img/logo.png" alt="logo">
+				</div>
+				<div class="list">
+					<ul>
+						<li><a href="#">menu</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">contacts</a></li>
+						<li><a href="#">gallery</a></li>
+						<li><a href="#">about</a></li>
+					</ul>
+				</div>
+				<div class="icons">
+					<div>
+						<i class="fab fa-facebook-f"></i>
+					</div>
+					<div>
+						<i class="fab fa-instagram"></i>
+					</div>
+					<div>
+						<i class="fab fa-twitter"></i>
+					</div>
+					<div>
+						<i class="fab fa-youtube"></i>
+					</div>
+					<div>
+						<i class="fab fa-pinterest"></i>
+					</div>
+				</div>
+				<div class="copyright">
+					©  2020 Pesto. All Rights Reserved. Privacy Policy. Not designed by Maksim Aysin
+				</div>
+			</div>
+		</div>
+		<!-- модальное окно поверх -->
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="script/foopicker.js"></script>
+	<script src="script/script.js"></script>
+</body>
+
+</html>
