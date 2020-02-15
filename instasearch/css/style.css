@@ -1,0 +1,109 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.root {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+.newDiv {
+	height: 200px;
+	width: 200px;
+	background-size: cover;
+	background-repeat: none;
+	background-position: center;
+	margin: 10px;
+	box-shadow: 0 0 10px green;
+	border-radius: 3%;
+	position: relative;
+}
+
+.newDivDesc {
+	position: absolute;
+	background-color: rgba(176, 255, 145, 0.8);
+	color: green;
+	text-align: center;
+	width: 100%;
+	bottom: 0;
+	border-radius: 3%;
+	text-align: justify;
+}
+
+
+#form {
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    width: 95%;
+    color: #5F5050; 
+}
+
+input {
+    padding: 5px;
+    width: 100%;
+    line-height: 30px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    color: #5F5050; 
+}
+
+input:focus {
+    color: green;
+    border: 1px solid green;
+    box-shadow: 5px 5px 15px black;
+}
+
+.btn {
+    background-color: lightgray;
+    height: 35px;
+    width: 100px;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: black;
+}
+
+.btn:active{
+    color: white;
+    background-color: gray;
+    font-size: 15px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.liked {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headered {
+   margin: 20px;
+   text-align: center;
+   width: 100%;
+   font-size: 35px;
+   font-weight: bold;
+   color: #BD3D3D;
+}
