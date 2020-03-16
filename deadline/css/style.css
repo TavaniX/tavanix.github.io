@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	background-color: #f5f6fa;
+}
+
+#container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#setDeadline{
+	width: 600px;
+	height: 400px;
+	background-color: #353b48;
+	margin: 5px;
+	border-radius: 5px;
+	position: relative;
+	padding: 10px;
+}
+
+#setDeadline h2{
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+	background-color: #353b48;
+	color: #e1b12c;
+}
+
+#setDeadline > *{
+	padding: 5px;
+	margin: 10px 0;
+	width: 100%;
+	border-radius: 5px;
+}
+
+#setDeadline textarea{
+	resize: none;
+}
+
+#btnSubmit{
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.deadlineCard {
+	width: 600px;
+	height: 300px;
+	background-color: #40739e;
+	margin: 5px;
+	border-radius: 5px;	
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.deadlineCard > * {
+	margin: 5px;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #dcdde1;
+}
+
+.taskTitle{
+	height: 30px;
+}
+
+.taskDescription{
+	height: 100px;
+}
+
+.taskDeadline{
+	height: 30px;
+}
+
+.timeLeft{
+	height: 30px;
+}
+
+.progressBar{
+	background-color: #44bd32;
+	height: 30px;
+	display: flex;
+	padding: 0px;.
+	display: flex;
+	align-items: center;
+}
+
+.progressBarRed{
+	position: relative;
+	background-color: #c23616;
+	height: 30px;
+	width: 0%;
+	border-radius: 5px;
+}
+
+.progressBarRed p{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 18px;
+	background-color: #c23616;
+}
+
+.btnRemove{
+	cursor: pointer;
+	height: 30px;
+	background-color: white;
+	text-align: center;
+}
