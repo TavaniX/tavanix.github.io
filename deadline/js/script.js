@@ -139,7 +139,7 @@ function renderNewCard(localStorageValues){
 				timeLeft.innerHTML = "Time left: " + days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 				
 				// закрашиваем красным
-				if (result>101){
+				if (days<1){
 					progressBarRed.style.width = (100-result/1000000) + '%';
 					p.innerText = Math.floor((100-result/1000000)) + '%';
 				};
